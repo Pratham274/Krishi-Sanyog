@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Krishi Sanyog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="custom.css"> -->
+    <style>
+        body{
+            font-family: 'Poppins',sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-900">
+    <header class="w-full fixed top-0 left-0 bg-[#f5f1e9] shadow-md z-50">
+        <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+            <a class="text-2xl font-bold text-black tracking-wide" href="#">Krishi Sanyog</a>
+            <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+                <a class="hover:text-green-600 transition" href="#">
+                    Home
+                </a>
+                <a class="hover:text-green-600 transition" href="#about">About</a>
+                <a class="hover:text-green-600 transition" href="#features">Feature</a>
+                <a class="hover:text-green-600 transition" href="#products">Products</a>
+                <a class="hover:text-green-600 transition" href="#contact">Contact</a>
+                
+		<a href="login.php" class="text-white bg-green-700 hover:bg-green-800 px-4 py-2 rounded-lg transition">
+                Login
+		</a>
+            </nav>
+            <div class="md:hidden">
+                <button aria-label="Toggle menu" class="text-gray-700 focus:outline-none" id="menu-btn">
+                    <i class="fas fa-bars fa-bg"></i>
+                </button>
+            </div>
+        </div>
+        <nav class="hidden md:hidden bg-[#f5f1e9] shadow-md" id="mobile-menu">
+            <a class="block px-6 py-3 border-b border-gray-300 font-semibold text-gray-700 hover:bg-green-100 transition" href="#">Home</a>
+            <a class="block px-6 py-3 border-b border-gray-300 font-semibold text-gray-700 hover:bg-green-100 transition" href="#about">About</a>
+            <a class="block px-6 py-3 border-b border-gray-300 font-semibold text-gray-700 hover:bg-green-100 transition" href="#features">Features</a>
+            <a class="block px-6 py-3 border-b border-gray-300 font-semibold text-gray-700 hover:bg-green-100 transition" href="#products">Products</a>
+            <a class="block px-6 py-3 font-semibold text-gray-700 hover:bg-green-100 transition" href="#contact">Contact</a>
+        </nav>
+    </header>
+    <section class="pt-24 bg-gradient-to-r from-gray-100 via-beige-50 to-yellow-50">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col-reverse md:flex-row items-center md:items-start gap-12 md:gap-24 py-20">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h1 class="text-4xl md:text-5xl font-extrabold text-black leading-tight">Optimize Fertilizer Usage for<span class="text-green-700">
+                    Higher Crop Yields
+                </span>
+                </h1>
+                <p class="mt-6 text-lg text-gray-800 max-w-xl">Sustainable fertilizer usage optimizer that helps farmers reduce waste, improves soil health, and maximize crop productivity</p>
+                <div class="mt-8 flex flex-col sm:flex-row sm:justify-center md:justify-start gap-4">
+                   <a class="inline-block bg-green-700 hover:bg-green-800 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition" href="#get-started">Get Started</a>
+                   <a class="inline-block border-2 border-green-700 text-green-700 hover:bg-green-700 hover:text-white font-semibold px-8 py-3 rounded-lg transition" href="#learn-more">Learn More</a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center md:justify-end">
+                <img alt="Golden wheat field under a clear blue sky representing sustainable agriculture and fertilizer optimization" class="w-full max-w-md rounded-xl shadow-lg" height="400" loading="lazy" src="https://storage.googleapis.com/a1aa/image/42723297-3a9d-43d7-cd8c-ebf35673e983.jpg" width="600"/>
+            </div>
+        </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 py-20" id="about">
+        <h2 class="text-3xl font-extrabold text-black text-center mb-12">About Krishi Sanyog</h2>
+        <div class="flex flex-col md:flex-row items-center gap-12">
+            <img alt="Farmer using a tablet device in a green field to optimize fertilizer usage with technology" class="rounded-xl shadow-lg w-full md:w-1/2 object-cover" height="350" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ed53247b-6717-4dde-a558-83327168aaad.jpg" width="500"/>
+            <div class="md:w-1/2 text-gray-800 text-lg">
+                <p>
+                    krishi Sanyog is a cutting-edge platform designed to help farmers optimize fertilizer application sustainably. By analyzing soil data, crop needs, and environmental factors, our system recommends precise fertilizer amounts to maximize yield while minimizing environmental impact.
+                </p>
+                <p class="mt-4"> Our mission is to empower farmers with smart technology that promotes sustainable agriculture and ensures food security for future generations.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#f5f1e9] py-20" id="features">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-extrabold text-black text-center mb-12">Key Features</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="bg-white rounded-xl p-8 flex flex-col items-center text-center shadow-md hover:shadow-lg transition">
+                    <img alt="Icon representing soil analysis with soil layers and magnifying glass" class="mb-6" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/ae230e7a-ff09-47e1-8d6f-9cde0d135438.jpg" width="80"/>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Soil Analysis</h3>
+                    <p class="text-gray-700">
+                        Detailed soil nutrient profiling to tailor fertilizer recommendations.  
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-8 flex flex-col items-center text-center shadow-md hover:shadow-lg transition">
+                    <img alt="Icon showing healthy crops with leaves and upward arrow" class="mb-6" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/db76cd66-5da9-4caf-68d5-49d9292a01eb.jpg" width="80"/>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Crop Health Monitoring</h3>
+                    <p class="text-gray-700">
+                        Monitor crop growth and nutrient uptake for timely fertilizer adjustments.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-8 flex flex-col items-center text-center shadow-md hover:shadow-lg transition">
+                    <img alt="Icon representing weather integration with sun, cloud, and raindrop" class="mb-6" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/1d6136c4-477b-4cff-27ef-2d990f7947bc.jpg" width="80"/>
+                    <h3 class="ext-xl font-semibold text-green-700 mb-2">Weather Integration</h3>
+                    <p class="text-gray-700">
+                        Adjust fertilizer plans based on real-time weather forecasts.
+                    </p>
+                </div>
+                <div class="bg-white rounded-xl p-8 flex flex-col items-center text-center shadow-md hover:shadow-lg transition">
+                    <img alt="Icon showing data analytics with charts and graphs" class="mb-6" height="80" loading="lazy" src="https://storage.googleapis.com/a1aa/image/e54feb96-20d0-4e53-d2fe-e9e130374ce8.jpg" width="80"/>
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Data Analytics</h3>
+                    <p class="text-gray-700">
+                        Comprehensive reports to optimize fertilizer usage and maximize yield.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 py-20">
+        <h2 class="text-3xl font-extrabold text-black text-center mb-12">How It Works</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+            <div class="flex flex-col items-center text-center">
+                <img alt="Icon showing a farmer collecting soil and crop data with a tablet" class="mb-6" height="120" loading="lazy" src="https://storage.googleapis.com/a1aa/image/598bb69c-dd05-44aa-adc5-3f6bb9e0eb21.jpg" width="120"/>
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Collect Data</h3>
+                <p class="text-gray-700 max-w-xs">Gather soil samples, crop data, and environmental info using smart devices.
+                </p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <img alt="Icon showing data analysis with charts and magnifying glass" class="mb-6" height="120" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5dceff53-fe78-44d1-7a01-97dfcae62eff.jpg" width="120"/>
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Analyze Data</h3>
+                <p class="text-gray-700 max-w-xs">Our AI-powered system processes data to generate fertilizer recommendations.</p>
+            </div>
+            <div class="flex flex-col items-center text-center">
+                <img alt="Icon showing optimized fertilizer usage with a plant and checkmark" class="mb-6" height="120" loading="lazy" src="https://storage.googleapis.com/a1aa/image/87c4e000-a31e-4dcf-d7c0-a758fa2b0c08.jpg" width="120"/>
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Optimize Usage</h3>
+                <p class="text-gray-700 max-w-xs">Apply recommended fertilizer amounts to improve yield and reduce waste.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="bg-[#f5f1e9] py-20" id="products">
+        <div class="max-w-7xl mx-auto px-6">
+            <h2 class="text-3xl font-extrabold text-black text-center mb-12">Our Solutions
+            </h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mb-16">
+                <div class="border border-gray-300 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+                    <img alt="Camera scanning crops in a green agricultural field for nutrient analysis" class="w-full object-cover" height="280" loading="lazy" src="https://storage.googleapis.com/a1aa/image/7a3a1a3e-3f3a-4a3a-9a3a-3a3a3a3a3a3a.jpg" width="400"/>
+                    <div class="p-6">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Camera Scanning</h3>
+                    <p class="text-gray-700 mb-4">Advanced imaging technology to scan crops and detect nutrient deficiencies.
+                    </p>
+                    <a class="inline-block text-green-700 font-semibold hover:underline" href="#">Learn More →</a>
+                </div>
+            </div>
+            <div class="border border-gray-300 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+                <img alt="Mobile app dashboard displaying fertilizer usage recommendations and crop health data" class="w-full object-cover" height="280" loading="lazy" src="https://storage.googleapis.com/a1aa/image/466e8fb3-6c55-4572-b3a3-f55ff80aa865.jpg" width="400"/>
+                <div class="p-6">
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Mobile App</h3>
+                <p class="text-gray-700 mb-4">User-friendly app to view fertilizer recommendations and track usage.</p>
+                <a class="inline-block text-green-700 font-semibold hover:underline" href="#">Learn More →</a>
+            </div>
+        </div>
+        <div class="border border-gray-300 rounded-xl overflow-hidden shadow hover:shadow-lg transition">
+            <img alt="Agricultural expert consulting a farmer in a field with tablet and notes" class="w-full object-cover" height="280" loading="lazy" src="https://storage.googleapis.com/a1aa/image/3f4a5b6c-7d8e-4f9a-9b0c-1d2e3f4a5b6c.jpg" width="400"/> 
+            <div class="p-6">
+                <h3 class="text-xl font-semibold text-green-700 mb-2">Expert Consultation</h3>
+                <p class="text-gray-700 mb-4">
+                    Personalized advice from agricultural experts to maximize fertilizer efficiency.
+                </p>
+                <a class="inline-block text-green-700 font-semibold hover:underline" href="#">
+                    Learn More →
+                </a>            
+            </div>
+        </div>
+    </div>
+    <h2 class="text-3xl font-extrabold text-black text-center mb-12">Fertilizer Templates for Promotion
+    </h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition flex flex-col items-center text-center">
+                <img alt="Bag of organic fertilizer with green leaves and natural elements" class="mb-6 w-24 h-24 object-contain" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/5156e5e2-de53-4c53-c434-facc771be61b.jpg" width="96"/>
+                <h3 class="text-lg font-semibold text-green-700 mb-2">Organic Fertilizer
+             </h3>
+             <p class="text-gray-700">Eco-friendly fertilizer made from natural ingredients to enrich soil health.
+            </p>
+            <span class="mt-4 inline-block bg-green-700 text-white px-4 py-1 rounded-full text-sm font-semibold">20% OFF</span>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition flex flex-col items-center text-center">
+                <img alt="Bag of nitrogen fertilizer with chemical symbols and green background" class="mb-6 w-24 h-24 object-contain" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/4c3191f6-bca1-43ee-8baa-84c0417518ec.jpg" width="96"/>
+                <h3 class="text-lg font-semibold text-green-700 mb-2">Nitrogen Fertilizer</h3>
+                <p class="text-gray-700">
+                    Boosts plant growth and leaf development for higher yields.   
+                </p>
+                <span class="mt-4 inline-block bg-yellow-400 text-black px-4 py-1 rounded-full text-sm font-semibold"> New Arrival
+                </span>             
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition flex flex-col items-center text-center">
+                <img alt="Bag of phosphorus fertilizer with chemical symbols and earthy background" class="mb-6 w-24 h-24 object-contain" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/c7a55013-de2f-4518-2d1f-abf4541326b0.jpg" width="96"/>
+                <h3 class="text-lg font-semibold text-green-700 mb-2">Phosphorus Fertilizer</h3>
+                <p class="text-gray-700">Enhances root development and flower formation.
+                </p>
+                <span class="mt-4 inline-block bg-green-700 text-white px-4 py-1 rounded-full text-sm font-semibold">Best Seller
+                </span>
+            </div>
+            <div class="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition flex flex-col items-center text-center">
+                <img alt="Bag of potassium fertilizer with chemical symbols and natural background" class="mb-6 w-24 h-24 object-contain" height="96" loading="lazy" src="https://storage.googleapis.com/a1aa/image/d4f1d527-bd4b-42c4-5585-ffd53b83e933.jpg" width="96"/>
+                <h3 class="text-lg font-semibold text-green-700 mb-2">Potassium Fertilizer
+                </h3>
+                <p class="text-gray-700">Improves drought resistance and overall plant health.
+                </p>
+                <span class="mt-4 inline-block bg-yellow-400 text-black px-4 py-1 rounded-full text-sm font-semibold">Limited Offer
+                </span>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="bg-black py-20" id="get-started">
+        <div class="max-w-7xl mx-auto px-6 text-center text-yellow-400">
+            <h2 class="text-4xl font-extrabold mb-6">Ready to Optimize Your Fertilizer Usage?
+            </h2>
+            <p class="text-lg max-w-2xl mx-auto mb-10">Join thousands of farmers using FertiOpt to boost yields sustainably and save costs.
+            </p>
+            <a class="inline-block bg-yellow-400 text-black font-bold px-10 py-4 rounded-lg shadow-lg hover:bg-yellow-300 transition" href="#contact">Get Started Today
+            </a>
+        </div>
+    </section>
+    <section class="max-w-7xl mx-auto px-6 py-20" id="contact">
+        <h2 class="text-3xl font-extrabold text-black text-center mb-12">Contact Us
+        </h2>
+        <div class="max-w-3xl mx-auto bg-[#f5f1e9] rounded-xl p-10 shadow-lg">
+            <form class="space-y-6" id="contact-form">
+                <div>
+                    <label class="block text-black font-semibold mb-2" for="name">Name
+                    </label>
+                    <input class="w-full px-4 py-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-700" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+                </div>
+                <div>
+                    <label class="block text-black font-semibold mb-2" for="email">Email
+                    </label>
+                    <input class="w-full px-4 py-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-700" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+                </div>
+                <div>
+                    <label class="block text-black font-semibold mb-2" for="message">Message
+                    </label>
+                    <textarea class="w-full px-4 py-3 rounded-lg border border-gray-400 focus:outline-none focus:ring-2 focus:ring-green-700" id="message" name="message" placeholder="Write your message here" required="" rows="4"></textarea>
+                </div>
+                <button class="bg-green-700 hover:bg-green-800 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transition w-full" type="submit">Send Message</button>
+            </form>
+            <p class="mt-4 text-center text-green-700 font-semibold hidden" id="form-message">
+            </p>
+        </div>
+    </section>
+    <footer class="bg-black text-yellow-400 py-12">
+        <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div>
+                <h3 class="text-xl font-bold mb-4">
+                    Krishi Sanyog
+                </h3>
+                <p class="max-w-xs">Smart fertilizer optimization technology for sustainable and efficient farming.
+                </p>
+                <div class="flex space-x-4 mt-6">
+                    <a aria-label="Facebook" class="hover:text-yellow-300" href="#">
+                        <i class="fab fa-facebook fa-lg">
+                        </i>
+                    </a>
+                    <a aria-label="Twitter" class="hover:text-yellow-300" href="#">
+                        <i class="fab fa-twitter fa-lg">
+                        </i>                 
+                    </a>
+                    <a aria-label="LinkedIn" class="hover:text-yellow-300" href="#">
+                        <i class="fab fa-linkedin fa-lg">
+                        </i>                 
+                    </a>
+                </div>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Solutions
+                </h4>
+                <ul class="space-y-2">
+                    <li>
+                        <a class="hover:text-yellow-300" href="#products">
+                            Camera Scanning
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:text-yellow-300" href="#products">Expert Consultation
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">
+                    Company
+                </h4>
+                <ul class="space-y-2">
+                    <li>
+                        <a class="hover:text-yellow-300" href="#about">About Us
+                        </a> 
+                    </li>
+                    <li>
+                        <a class="hover:text-yellow-300" href="#">Careers
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:text-yellow-300" href="#">Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a class="hover:text-yellow-300" href="#contact">Contact
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-lg font-semibold mb-4">Contact
+                </h4>
+                <p class="mb-2">
+                    Phone: (444) 123-456
+                </p>	
+                <p>
+                    Email: info@fertiopt.com
+                </p>
+            </div>
+        </div>
+        <div class="mt-12 text-center text-yellow-300 text-sm"> © 2025 Krishi  Sanyog. All rights reserved.
+        </div>
+    </footer>
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    // Simple contact form submission simulation
+    const form = document.getElementById('contact-form');
+    const formMessage = document.getElementById('form-message');
+
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      formMessage.textContent = 'Thank you for contacting us! We will get back to you soon.';
+      formMessage.classList.remove('hidden');
+      form.reset();
+    });
+    </script>
+</body>
+</html>
